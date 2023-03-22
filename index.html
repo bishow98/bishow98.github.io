@@ -1,88 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College management system</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-        .header {
-            display: flex;
-            background-color: aqua;
-            justify-content: space-between;
-        }
-
-        pre {
-            margin-top: 40px;
-            font-size: 4vw;
+    /* header{
+    background-color: aqua;
+    height: 8.9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+    .header {
+        display: flex;
+        background-color: aqua;
+        justify-content: space-between;
+    }
+    pre {
+            margin-top: 1rem;
+            font-size: 3vw;
         } 
-        .faculty{
-            height: 50vh;
-            background-color:blueviolet;
-            display: flex;
-            flex-direction: column;
-            
-        
-        }   
-        .bim{
-            height: 40px;
-            width: 100px;
+
+
+    .navi {
+        border-style: solid;
+        border-color: antiquewhite;
+        border-width: 5px 0px 0px 0px;
+        background: rgb(73, 71, 71);
+        height: 3.5vh;
+    }
+
+    .container {
+        display: flex;
+        /*
+    display: grid;
+    background-color: antiquewhite;
+    grid-column-gap: 8px ;
+    grid-row-gap:;
+    grid-template-columns: 56px auto;*/
+    }
+
+    .box1 {
+        border-style: solid;
+        border-color: antiquewhite;
+        border-width: 5px 3px 0px 0px;
+        background-color: aqua;
+        height: 83vh;
+        width: 60vh;
+    }
+
+    .box2 {
+        border-style: solid;
+        border-color: antiquewhite;
+        border-width: 6px 0px 0px 3px;
+        background-color: rgb(178, 240, 240);
+        width: 346vh;
+    }
+
+    footer {
+        display: flex;
+        background-color: black;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last,
+    p {
+        color: aliceblue;
+    }
+    .bim{
+            height: 4rem;
+            width: 15rem;
             background-color: rgb(55, 33, 7);
+            margin-bottom: 40px;
+            cursor: pointer;
         }
         .csit{
-            height: 40px;
-            width: 100px;
-            background-color: rgb(211, 189, 163);
+            height: 4rem;
+            width: 15rem;
+            background-color: rgb(5, 59, 134);
+            margin-bottom: 40px;
+            cursor: pointer;
         }
         .bca{
-            height: 40px;
-            width: 100px;
+            height: 4rem;
+            width: 15rem;
             background-color: rgb(22, 151, 110);
+            margin-bottom: 40px;
+            cursor: pointer;
         }
         .bbs{
-            height: 40px;
-            width: 100px;
+            height: 4rem;
+            width: 15rem;
             background-color: rgb(3, 59, 123);
+            margin-bottom: 40px;
+            cursor: pointer;
         }
         .bhm{
-            height: 40px;
-            width: 100px;
+            height: 4rem;
+            width: 15rem;
             background-color: rgb(127, 6, 103);
+            margin-bottom: 40px;
+            cursor: pointer;
         }
-    </style>
-</head>
+        .bim:hover, .bca:hover, .bhm:hover, .bbs:hover, .csit:hover{
+            background-color: aquamarine;
+        }
+</style>
+<!-- <header>
+    <div class="head">
+        <div class="logo">
+        <img src="logo.png" alt=""></div>
+        <p2>HIMALAYA DARSHAN COLLEGE</p2>
+        <p3>search</p3>
+        </div>
+    </header> -->
+<header>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="college logo">
+
+        </div>
+        <div class="items">
+            <pre>Himalaya Darshan college</pre>
+        </div>
+        <div class="search">
+
+            <input class="box" type="text" placeholder="Search">
+            <button class="button" type="submit">🔎</button>
+        </div>
+    </div>
+</header>
+<div class="navi">nav bar</div>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="logo">
-                <img src="logo.png" alt="college logo">
-
-            </div>
-            <div class="items">
-                <pre>Himalaya Darshan college</pre>
-            </div>
-            <div class="search">
-
-                <input class="box" type="text" placeholder="Search">
-                <button class="button" type="submit">🔎</button>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="faculty">
+    <div class="container">
+        <div class="box1">
             <div class="bim">BIM</div>
             <div class="csit">CSIT</div>
             <div class="bca">BCA</div>
             <div class="bbs">BBS</div>
             <div class="bhm">BHM</div>
         </div>
-    </main>
+        <div class="box2">box2</div>
+    </div>
+</body>
+<footer>
+    <div class="last">
+        <p>copyright: Bsc.Csit 2077</p>
+    </div>
+</footer>
 
-  </body>
 </html>
